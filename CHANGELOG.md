@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/grantcodes/commit/compare/v1.0.0...v1.0.7) (2022-08-15)
+
+
+### Miscellaneous Chores
+
+* release 1.0.7 ([cfec841](https://github.com/grantcodes/commit/commit/cfec841a1f2757a099cfca10a72abe06327cd687))
+
 ## 1.0.0 (2022-08-15)
 
 
