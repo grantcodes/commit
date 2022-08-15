@@ -1,6 +1,6 @@
 {
   "name": "@grantcodes/commit",
-  "version": "1.0.6",
+  "version": "1.0.0",
   "type": "module",
   "description": "A personal commitizen setup to help with creating lovely, consistent, organized commits",
   "bin": "./cli.js",
