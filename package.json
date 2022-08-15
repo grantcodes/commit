@@ -1,6 +1,7 @@
 {
   "name": "@grantcodes/commit",
-  "version": "1.0.0",
+  "version": "1.0.6",
+  "type": "module",
   "description": "A personal commitizen setup to help with creating lovely, consistent, organized commits",
   "bin": "./cli.js",
   "scripts": {
@@ -24,6 +25,17 @@
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "simple-git-hooks": "^2.8.0"
+  },
+  "files": [
+    ".simple-git-hooks.cjs",
+    "cli.js",
+    "commitlint.config.cjs",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "standard": "^17.0.0"
   }
 }
