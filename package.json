@@ -1,0 +1,29 @@
+{
+  "name": "@grantcodes/commit",
+  "version": "1.0.0",
+  "description": "A personal commitizen setup to help with creating lovely, consistent, organized commits",
+  "bin": "./cli.js",
+  "scripts": {
+    "commit": "node ./cli",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grantcodes/commit.git"
+  },
+  "keywords": [
+    "commitizen"
+  ],
+  "author": "grantcodes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grantcodes/commit/issues"
+  },
+  "homepage": "https://github.com/grantcodes/commit#readme",
+  "dependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "commitizen": "^4.2.5",
+    "simple-git-hooks": "^2.8.0"
+  }
+}
