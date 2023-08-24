@@ -39,13 +39,13 @@ async function install () {
   console.log('Successfully installed')
 }
 
-// Install stuff when running `npx grantcodes-commit install`
+// Install stuff when running `npx @grantcodes/commit install`
 if (lastCommand === 'install') {
   install()
   process.exit()
 }
 
-// Run a fancy commit with `npx grantcodes-commit`
+// Run a fancy commit with `npx @grantcodes/commit`
 bootstrap({
   cliPath: pathResolve(require.resolve('commitizen'), '../..'),
   config: {
