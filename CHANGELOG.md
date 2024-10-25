@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/grantcodes/commit/compare/v1.0.7...v2.0.0) (2024-10-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **npm:** Updated minimum node.js version to 18
+
+### Build System
+
+* **npm:** update dependencies ([d1996dc](https://github.com/grantcodes/commit/commit/d1996dc8b03b88e7aaff9ad9ad29a82b3a3c29cb))
+
 ## [1.0.7](https://github.com/grantcodes/commit/compare/v1.0.0...v1.0.7) (2022-08-15)
 
 
