@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v3
         name: Create release PR
+        id: release
         with:
           release-type: node
           package-name: '@grantcodes/commit'
@@ -19,22 +20,26 @@ jobs:
         name: Checkout code
         if: ${{ steps.release.outputs.release_created }}
 
+      - uses: pnpm/action-setup@v4
+        name: Setup pnpm
+        if: ${{ steps.release.outputs.release_created }}
+
       - uses: actions/setup-node@v3
         name: Setup node
         with:
-          node-version: 16
+          node-version: 22
           registry-url: 'https://registry.npmjs.org'
         if: ${{ steps.release.outputs.release_created }}
 
-      - run: npm ci
+      - run: pnpm install --frozen-lockfile
         name: Install dependencies
         if: ${{ steps.release.outputs.release_created }}
 
-      - run: npm test
+      - run: pnpm test
         name: Run tests
         if: ${{ steps.release.outputs.release_created }}
 
-      - run: npm publish
+      - run: pnpm publish
         name: Publish to NPM
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
