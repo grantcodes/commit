@@ -40,5 +40,6 @@
   },
   "engines": {
     "node": ">=v18"
-  }
+  },
+  "packageManager": "pnpm@11.15.1"
 }
